@@ -1,5 +1,8 @@
 package com.uca.pncsegundoparcialgestiontareas.domain.dto.response;
 
-public class GeneralResponse {
-
+public record GeneralResponse(
+        Object data,
+        Integer status,
+        String message
+) {
 }

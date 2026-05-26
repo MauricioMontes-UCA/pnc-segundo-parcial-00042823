@@ -1,4 +1,8 @@
 package com.uca.pncsegundoparcialgestiontareas.domain.dto.response;
 
-public class APIErrorResponse {
+public record APIErrorResponse(
+        Object data,
+        Integer status,
+        String message
+) {
 }
